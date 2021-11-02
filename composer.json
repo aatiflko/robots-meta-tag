@@ -1,0 +1,35 @@
+{
+    "name": "aatiflko/robots-meta-tag",
+    "description": "Magento 2 Robots Meta Tag Extension",
+    "keywords": ["magento", "magento2 extension", "magento 2 extension", "extension", "module", "magento2 module", "magento 2 module", "magento 2 robots meta tag", "magento 2 robots", "magento 2 seo"],
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "homepage": "https://github.com/aatiflko/robots-meta-tag",
+    "authors": [
+        {
+            "name": "Neo",
+            "email": "atif.nehal@neosoftmail.com"
+        }
+    ],
+    "repositories": {
+        "type": "git",
+        "url": "https://github.com/aatiflko/robots-meta-tag"
+    },
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Neo\\RobotsMetaTag\\": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+

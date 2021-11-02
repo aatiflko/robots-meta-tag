@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Adding robots tag in product page -->
+    <type name="Magento\Catalog\Controller\Product\View">
+        <plugin name="neo_robots_product" type="Neo\RobotsMetaTag\Plugin\RobotsTag\Product"/>
+    </type>
+    <!-- Adding robots tag in category page -->
+    <type name="Magento\Catalog\Controller\Category\View">
+        <plugin name="neo_robots_category" type="Neo\RobotsMetaTag\Plugin\RobotsTag\Category"/>
+    </type>
+</config>
