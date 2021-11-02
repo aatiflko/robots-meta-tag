@@ -6,6 +6,7 @@ use Magento\Catalog\Controller\Category\View;
 use Magento\Framework\View\Page\Config as PageConfig;
 use Magento\Framework\View\Result\Page;
 use Magento\Framework\Registry;
+use Neo\RobotsMetaTag\Helper\Data as NeoHelper;
 
 /**
  * Class Category
@@ -31,14 +32,24 @@ class Category {
     protected $registry;
 
     /**
+     * Neo Helper
+     * @var NeoHelper $neoHelper
+     */
+    protected $neoHelper;
+
+    /**
      * Category constructor.
      *
      * @param PageConfig       $pageConfig
+     * @param MetaRobotsConfig $metaRobotsConfig
+     * @param Registry         $registry
      */
     public function __construct(
+            NeoHelper $neoHelper,
             PageConfig $pageConfig,
             Registry $registry
     ) {
+        $this->neoHelper = $neoHelper;
         $this->pageConfig = $pageConfig;
         $this->registry = $registry;
     }
@@ -63,3 +74,4 @@ class Category {
     }
 
 }
+
