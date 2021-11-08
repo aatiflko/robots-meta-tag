@@ -6,6 +6,7 @@
             <argument name="data" xsi:type="array">
                 <item name="options" xsi:type="object">Neo\RobotsMetaTag\Model\Config\Source\CategoryMetaOptions</item>
                 <item name="config" xsi:type="array">
+                    <item name="caption" xsi:type="string" translate="true">Select one...</item>
                     <item name="required" xsi:type="boolean">false</item>
                     <item name="validation" xsi:type="array">
                         <item name="required-entry" xsi:type="boolean">true</item>

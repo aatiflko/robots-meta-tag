@@ -18,7 +18,7 @@ class ProductMetaOptions extends \Magento\Eav\Model\Entity\Attribute\Source\Abst
      */
     public function getAllOptions() {
         $this->_options = [
-            ['label' => __(''), 'value' => ''],
+            ['label' => __('Select one...'), 'value' => ''],
             ['label' => __('NOINDEX, NOFOLLOW'), 'value' => 'NOINDEX, NOFOLLOW'],
             ['label' => __('NOINDEX, FOLLOW'), 'value' => 'NOINDEX, FOLLOW'],
             ['label' => __('INDEX, NOFOLLOW'), 'value' => 'INDEX, NOFOLLOW'],
@@ -29,3 +29,4 @@ class ProductMetaOptions extends \Magento\Eav\Model\Entity\Attribute\Source\Abst
     }
 
 }
+

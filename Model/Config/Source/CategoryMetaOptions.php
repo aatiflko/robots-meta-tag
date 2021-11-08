@@ -18,7 +18,6 @@ class CategoryMetaOptions extends \Magento\Eav\Model\Entity\Attribute\Source\Abs
      */
     public function getAllOptions() {
         $this->_options = [
-            ['label' => __(''), 'value' => ''],
             ['label' => __('NOINDEX, NOFOLLOW'), 'value' => 'NOINDEX, NOFOLLOW'],
             ['label' => __('NOINDEX, FOLLOW'), 'value' => 'NOINDEX, FOLLOW'],
             ['label' => __('INDEX, NOFOLLOW'), 'value' => 'INDEX, NOFOLLOW'],
@@ -29,3 +28,4 @@ class CategoryMetaOptions extends \Magento\Eav\Model\Entity\Attribute\Source\Abs
     }
 
 }
+
